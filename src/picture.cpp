@@ -44,13 +44,23 @@ void Picture::add(const Shape& shape) {
     }
 }
 
+//void Picture::print_all(std::ostream& out) const {
+   // ListNode* current = head;
+  //  while (current) {
+   //     current->shape->print(out);
+   //     current = current->next;
+    //}
+//}
 void Picture::print_all(std::ostream& out) const {
     ListNode* current = head;
     while (current) {
-        current->shape->print(out);
+        current->shape->print(out); // Prints shape's name, coordinates, and area
+        current->shape->draw(out);  // Draws the shape using character graphics
+        out << "\n"; // Adds a newline for better separation between shapes
         current = current->next;
     }
 }
+
 
 void Picture::draw_all(std::ostream& out) const {
     ListNode* current = head;
