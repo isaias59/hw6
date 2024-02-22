@@ -33,7 +33,7 @@ public:
     void print_all(std::ostream& out) const;
 
     // draws the Shapes in this Picture in the order they were added
-    void draw_all(std::ostream& out) const;
+   // void draw_all(std::ostream& out) const;
 
     // returns the sum of the areas of all the Shapes in this Picture
     double total_area() const;
