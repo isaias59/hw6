@@ -56,7 +56,7 @@ void Picture::print_all(std::ostream& out) const {
     while (current) {
         current->shape->print(out); // Prints shape's name, coordinates, and area
         current->shape->draw(out);  // Draws the shape using character graphics
-        out << "\n"; // Adds a newline for better separation between shapes
+        out << "\n";
         current = current->next;
     }
 }
