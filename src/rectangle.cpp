@@ -8,8 +8,8 @@ double Rectangle::area() const {
 }
 
 void Rectangle::draw(std::ostream& out) const {
-    for (int i = 0; i < height; ++i) {
-        for (int j = 0; j < width; ++j) {
+    for (int i = 0; i < width; ++i) {
+        for (int j = 0; j < height; ++j) {
             out << '*';
         }
         out << '\n';
