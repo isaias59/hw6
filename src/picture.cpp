@@ -62,13 +62,13 @@ void Picture::print_all(std::ostream& out) const {
 }
 
 
-void Picture::draw_all(std::ostream& out) const {
-    ListNode* current = head;
-    while (current) {
-        current->shape->draw(out);
-        current = current->next;
-    }
-}
+//void Picture::draw_all(std::ostream& out) const {
+   // ListNode* current = head;
+  //  while (current) {
+    //    current->shape->draw(out);
+  //      current = current->next;
+//    }
+//}
 
 double Picture::total_area() const {
     double total = 0.0;
